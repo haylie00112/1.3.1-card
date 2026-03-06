@@ -32,7 +32,7 @@ firework_1 = trtl.Turtle()
 firework_1.hideturtle()
 firework_1.penup()
 firework_1.goto(-250, -275)
-firework_1.color("red")
+firework_1.color("pink")
 
 firework_2 = trtl.Turtle()
 firework_2.hideturtle()
@@ -116,7 +116,7 @@ def launch_1():
     # show the trail immediately
     wn.update()
     # explode after a short delay
-    wn.ontimer(lambda: explode(-250, 40, "red", count=48, speed=9), 250)
+    wn.ontimer(lambda: explode(-250, 40, "pink", count=48, speed=9), 250)
     # erase the trail after the explosion
     wn.ontimer(lambda: erase_trail(-250, 230), 900)
     # hide launcher head after done
